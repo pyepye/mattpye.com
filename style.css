@@ -1,0 +1,100 @@
+:root {
+  --main-colour: white;
+  --alt-colour: black;
+}
+
+[data-theme="dark"] {
+  --main-colour: black;
+  --alt-colour: white;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--main-colour);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:visited {
+  color: var(--alt-colour);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-colour);
+  color: var(--alt-colour);
+}
+
+h1 {
+  font-weight: normal;
+  margin-bottom: 7vh;
+  color: var(--alt-colour);
+}
+h2 {
+  font-size: 1.8em;
+  color: var(--alt-colour);
+}
+
+.wrapper {
+  margin: 30vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+.main-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.main-links button {
+  padding: 10px 20px;
+  background-color: var(--main-colour);
+  color: var(--alt-colour);
+  border: 2px solid var(--alt-colour);
+  font-size: 0.8em;
+  font-weight: 500;
+  cursor: pointer;
+}
+.main-links button:hover {
+  background-color: var(--alt-colour);
+  color: var(--main-colour);
+
+}
+
+.fold {
+  margin-top: 44vh;
+  height: 60vh;
+}
+
+#projects {
+  padding-top: 5vh;
+  max-width: 600px;
+}
+
+#projects > a {
+  text-decoration: none;
+}
+
+#projects ul {
+  margin-top: 30px;
+}
+#projects ul li {
+  font-size: 1.2em;
+  margin-top: 10px;
+  line-height: 1.6em
+}
+
+#projects ul li a {
+  color: var(--alt-colour);
+  font-weight: 900;
+}
