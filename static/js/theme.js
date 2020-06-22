@@ -36,6 +36,7 @@ function setTheme(theme){
   currentTheme = theme;
   const button = document.querySelector("#theme-switch-button");
   const buttonText = theme == "dark" ? "light" : "dark";  // Button should have the opposite name
+  button.textContent = `${buttonText} Mode`;
   document.body.classList.add(theme);
   document.body.classList.remove(buttonText);
   if(isLocalStorage){
