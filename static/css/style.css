@@ -189,12 +189,8 @@ h2 {
 }
 
 .fold {
-  margin-top: 40vh;
+  margin-top: 35vh;
   height: 60vh;
-}
-
-#projects {
-  padding-top: 5vh;
 }
 
 #projects > a {
